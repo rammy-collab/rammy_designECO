@@ -47,98 +47,121 @@ export default async function ProjectPage({ params }: Props) {
 
             <article className="container" style={{ paddingTop: "80px" }}>
                 {/* Project Header */}
-                <div style={{ marginBottom: "2.5rem" }}>
+                <div style={{ marginBottom: "3.5rem" }}>
                     <div style={{ display: "flex", gap: "0.5rem", marginBottom: "1rem" }}>
                         {p.tags.map(tag => (
-                            <span key={tag} style={{ color: "var(--primary)", fontWeight: "600", fontSize: "0.875rem" }}>#{tag}</span>
+                            <span key={tag} style={{ color: "var(--primary)", fontWeight: "700", fontSize: "1rem" }}>#{tag}</span>
                         ))}
                     </div>
-                    <h2 style={{ fontSize: "2rem", fontWeight: "800", marginBottom: "1.5rem", lineHeight: "1.2" }}>{p.title}</h2>
+                    <h2 className="title-xl" style={{ marginBottom: "2rem" }}>{p.title}</h2>
 
-                    <div style={{
+                    <div className="stat-card" style={{
                         display: "grid",
                         gridTemplateColumns: "repeat(3, 1fr)",
                         gap: "1rem",
-                        padding: "1.5rem",
-                        background: "var(--accent)",
-                        borderRadius: "16px"
+                        textAlign: "center"
                     }}>
-                        <div style={{ textAlign: "center" }}>
-                            <p style={{ color: "var(--text-muted)", fontSize: "0.75rem", marginBottom: "0.25rem" }}>전용면적</p>
-                            <p style={{ fontWeight: "700" }}>{p.sizePy}평</p>
+                        <div>
+                            <p className="stat-label">전용면적</p>
+                            <p className="stat-value">{p.sizePy}평</p>
                         </div>
-                        <div style={{ textAlign: "center", borderLeft: "1px solid var(--border)", borderRight: "1px solid var(--border)" }}>
-                            <p style={{ color: "var(--text-muted)", fontSize: "0.75rem", marginBottom: "0.25rem" }}>예상 견적</p>
-                            <p style={{ fontWeight: "700" }}>{p.costDisplay}</p>
+                        <div style={{ borderLeft: "1px solid var(--border)", borderRight: "1px solid var(--border)" }}>
+                            <p className="stat-label">예상 견적</p>
+                            <p className="stat-value" style={{ color: "var(--primary)" }}>{p.costDisplay}</p>
                         </div>
-                        <div style={{ textAlign: "center" }}>
-                            <p style={{ color: "var(--text-muted)", fontSize: "0.75rem", marginBottom: "0.25rem" }}>공사 기간</p>
-                            <p style={{ fontWeight: "700" }}>{p.durationDisplay}</p>
+                        <div>
+                            <p className="stat-label">공사 기간</p>
+                            <p className="stat-value">{p.durationDisplay}</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Info & Spec */}
-                <section style={{ marginBottom: "3rem" }}>
-                    <h3 style={{ fontSize: "1.25rem", fontWeight: "700", marginBottom: "1rem" }}>시공 상세 정보</h3>
-                    <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+                <section style={{ marginBottom: "5rem" }}>
+                    <h3 className="title-lg" style={{ marginBottom: "1.5rem" }}>시공 상세 정보</h3>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
                         {p.spec.map((item, idx) => (
-                            <div key={idx} style={{ display: "flex", padding: "1rem", borderBottom: "1px solid var(--border)" }}>
-                                <span style={{ width: "80px", fontWeight: "600", color: "var(--text-muted)" }}>{item.label}</span>
-                                <span>{item.value}</span>
+                            <div key={idx} style={{
+                                display: "flex",
+                                padding: "1.5rem",
+                                borderTop: "1px solid var(--border)",
+                                background: idx % 2 === 0 ? "transparent" : "rgba(0,0,0,0.01)"
+                            }}>
+                                <span style={{ width: "120px", fontWeight: "700", color: "var(--text-muted)", fontSize: "1.125rem" }}>{item.label}</span>
+                                <span style={{ fontSize: "1.125rem", fontWeight: "500" }}>{item.value}</span>
                             </div>
                         ))}
                     </div>
                 </section>
 
-                {/* Before Images - Show first */}
-                {p.beforeImages && p.beforeImages.length > 0 && (
-                    <section style={{ marginBottom: "4rem" }}>
-                        <h3 style={{ fontSize: "1.5rem", fontWeight: "800", marginBottom: "1.5rem", color: "var(--text-muted)" }}>
-                            Before <span style={{ fontSize: "0.875rem", fontWeight: "400", marginLeft: "0.5rem" }}>시공 전 모습</span>
-                        </h3>
-                        <div style={{
-                            display: "grid",
-                            gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-                            gap: "1rem"
-                        }}>
-                            {p.beforeImages.map((img, idx) => (
-                                <div key={idx} style={{ position: "relative", aspectRatio: "4/3", borderRadius: "12px", overflow: "hidden" }}>
-                                    <Image src={img.url} alt={img.caption || "시공 전"} fill style={{ objectFit: "contain" }} unoptimized={true} />
-                                    <div style={{ position: "absolute", bottom: "0.5rem", left: "0.5rem", background: "rgba(0,0,0,0.6)", color: "white", padding: "0.2rem 0.5rem", fontSize: "0.75rem", borderRadius: "4px" }}>
-                                        {img.caption}
+                {/* Comparison Table (Before/After) */}
+                <section style={{ marginBottom: "5rem" }}>
+                    <h3 className="title-lg" style={{ marginBottom: "2rem" }}>시공 전/후 전체 비교</h3>
+
+                    <div className="comparison-table">
+                        <div className="comparison-header">
+                            <div>BEFORE</div>
+                            <div style={{ color: "var(--primary)" }}>AFTER</div>
+                        </div>
+
+                        {/* Before Images Row */}
+                        {p.beforeImages && p.beforeImages.length > 0 && (
+                            <div className="comparison-row">
+                                <div className="comparison-cell">
+                                    <span className="badge badge-before">기존 공간</span>
+                                    <div style={{ display: "grid", gap: "1rem" }}>
+                                        {p.beforeImages.map((img, idx) => (
+                                            <div key={idx} style={{ position: "relative", width: "100%", aspectRatio: "4/3", borderRadius: "12px", overflow: "hidden" }}>
+                                                <Image src={img.url} alt={img.caption || "시공 전"} fill style={{ objectFit: "contain" }} unoptimized={true} />
+                                                <div style={{ position: "absolute", bottom: "0.5rem", left: "0.5rem", background: "rgba(0,0,0,0.6)", color: "white", padding: "0.2rem 0.5rem", fontSize: "0.75rem", borderRadius: "4px" }}>
+                                                    {img.caption}
+                                                </div>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
-                            ))}
-                        </div>
-                    </section>
-                )}
-
-                {/* After Sections - Categorized */}
-                {p.afterSections && p.afterSections.length > 0 && (
-                    <section style={{ marginBottom: "3rem" }}>
-                        <h3 style={{ fontSize: "1.5rem", fontWeight: "800", marginBottom: "2rem", color: "var(--primary)" }}>
-                            After <span style={{ fontSize: "0.875rem", fontWeight: "400", marginLeft: "0.5rem", color: "var(--foreground)" }}>시공 후 변화된 공간</span>
-                        </h3>
-
-                        {p.afterSections.map((section, sIdx) => (
-                            <div key={sIdx} style={{ marginBottom: "4rem" }}>
-                                <div style={{ marginBottom: "1.5rem" }}>
-                                    <h4 style={{ fontSize: "1.25rem", fontWeight: "700", marginBottom: "0.5rem" }}>{section.title}</h4>
-                                    <p style={{ color: "var(--text-muted)", fontSize: "0.9375rem", lineHeight: "1.6" }}>{section.description}</p>
-                                </div>
-
-                                <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-                                    {section.images.map((imgUrl, iIdx) => (
-                                        <div key={iIdx} style={{ position: "relative", width: "100%", aspectRatio: "3/2", borderRadius: "16px", overflow: "hidden", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
-                                            <Image src={imgUrl} alt={`${section.title} 이미지 ${iIdx + 1}`} fill style={{ objectFit: "contain" }} unoptimized={true} />
-                                        </div>
-                                    ))}
+                                <div className="comparison-cell">
+                                    <span className="badge badge-after">변화된 공간</span>
+                                    <div style={{ display: "grid", gap: "2rem" }}>
+                                        {p.afterSections.map((section, sIdx) => (
+                                            <div key={sIdx}>
+                                                <p style={{ fontWeight: "800", marginBottom: "0.75rem", fontSize: "1.125rem", color: "var(--primary)" }}>[{section.title}]</p>
+                                                <div style={{ display: "grid", gap: "1rem" }}>
+                                                    {section.images.slice(0, 2).map((imgUrl, iIdx) => (
+                                                        <div key={iIdx} style={{ position: "relative", width: "100%", aspectRatio: "3/2", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}>
+                                                            <Image src={imgUrl} alt={section.title} fill style={{ objectFit: "contain" }} unoptimized={true} />
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
-                        ))}
-                    </section>
-                )}
+                        )}
+                    </div>
+                </section>
+
+                {/* Full Gallery Section */}
+                <section style={{ marginBottom: "5rem" }}>
+                    <h3 className="title-lg" style={{ marginBottom: "2rem" }}>갤러리 상세 보기</h3>
+                    {p.afterSections.map((section, sIdx) => (
+                        <div key={sIdx} style={{ marginBottom: "4rem" }}>
+                            <div style={{ marginBottom: "2rem", borderLeft: "6px solid var(--primary)", paddingLeft: "1.5rem" }}>
+                                <h4 style={{ fontSize: "1.5rem", fontWeight: "800", marginBottom: "0.5rem" }}>{section.title}</h4>
+                                <p style={{ color: "var(--text-muted)", fontSize: "1.125rem", lineHeight: "1.6" }}>{section.description}</p>
+                            </div>
+
+                            <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+                                {section.images.map((imgUrl, iIdx) => (
+                                    <div key={iIdx} style={{ position: "relative", width: "100%", aspectRatio: "3/2", borderRadius: "24px", overflow: "hidden", boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}>
+                                        <Image src={imgUrl} alt={`${section.title} 상세`} fill style={{ objectFit: "contain" }} unoptimized={true} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </section>
             </article>
 
             {/* Floating CTA Bar */}
