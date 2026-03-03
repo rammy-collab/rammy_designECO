@@ -17,10 +17,10 @@ export default function Home() {
       <section className="container" style={{ padding: "4rem 1.5rem" }}>
         <div style={{ marginBottom: "3rem" }}>
           <h2 style={{ fontSize: "2.5rem", fontWeight: "800", marginBottom: "1rem", lineHeight: 1.2 }}>
-            당신의 공간에 완벽한 <span style={{ color: "var(--primary)" }}>감각을 디자인합니다</span>
+            당신의 공간에 <span style={{ color: "var(--primary)" }}>감각을 디자인합니다</span>
           </h2>
           <p style={{ color: "var(--text-muted)", fontSize: "1.125rem", maxWidth: "600px" }}>
-            엄선된 인테리어 시공 사례를 확인하고, 당신의 취향에 딱 맞는 견적 상담을 받아보세요.
+            인테리어 시공 사례를 확인하고, 당신의 취향에 맞는 견적 상담을 받아보세요.
           </p>
         </div>
 

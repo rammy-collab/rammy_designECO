@@ -55,12 +55,7 @@ export default async function ProjectPage({ params }: Props) {
                     </div>
                     <h2 className="title-xl" style={{ marginBottom: "2rem" }}>{p.title}</h2>
 
-                    <div className="stat-card" style={{
-                        display: "grid",
-                        gridTemplateColumns: "repeat(3, 1fr)",
-                        gap: "1rem",
-                        textAlign: "center"
-                    }}>
+                    <div className="stat-card">
                         <div>
                             <p className="stat-label">전용면적</p>
                             <p className="stat-value">{p.sizePy}평</p>
