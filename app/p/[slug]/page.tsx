@@ -89,57 +89,9 @@ export default async function ProjectPage({ params }: Props) {
                     </div>
                 </section>
 
-                {/* Comparison Table (Before/After) */}
-                <section style={{ marginBottom: "5rem" }}>
-                    <h3 className="title-lg" style={{ marginBottom: "2rem" }}>시공 전/후 전체 비교</h3>
-
-                    <div className="comparison-table">
-                        <div className="comparison-header">
-                            <div>BEFORE</div>
-                            <div style={{ color: "var(--primary)" }}>AFTER</div>
-                        </div>
-
-                        {/* Before Images Row */}
-                        {p.beforeImages && p.beforeImages.length > 0 && (
-                            <div className="comparison-row">
-                                <div className="comparison-cell">
-                                    <span className="badge badge-before">기존 공간</span>
-                                    <div style={{ display: "grid", gap: "1rem" }}>
-                                        {p.beforeImages.map((img, idx) => (
-                                            <div key={idx} style={{ position: "relative", width: "100%", aspectRatio: "4/3", borderRadius: "12px", overflow: "hidden" }}>
-                                                <Image src={img.url} alt={img.caption || "시공 전"} fill style={{ objectFit: "contain" }} unoptimized={true} />
-                                                <div style={{ position: "absolute", bottom: "0.5rem", left: "0.5rem", background: "rgba(0,0,0,0.6)", color: "white", padding: "0.2rem 0.5rem", fontSize: "0.75rem", borderRadius: "4px" }}>
-                                                    {img.caption}
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                                <div className="comparison-cell">
-                                    <span className="badge badge-after">변화된 공간</span>
-                                    <div style={{ display: "grid", gap: "2rem" }}>
-                                        {p.afterSections.map((section, sIdx) => (
-                                            <div key={sIdx}>
-                                                <p style={{ fontWeight: "800", marginBottom: "0.75rem", fontSize: "1.125rem", color: "var(--primary)" }}>[{section.title}]</p>
-                                                <div style={{ display: "grid", gap: "1rem" }}>
-                                                    {section.images.slice(0, 2).map((imgUrl, iIdx) => (
-                                                        <div key={iIdx} style={{ position: "relative", width: "100%", aspectRatio: "3/2", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}>
-                                                            <Image src={imgUrl} alt={section.title} fill style={{ objectFit: "contain" }} unoptimized={true} />
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </section>
-
                 {/* Full Gallery Section */}
                 <section style={{ marginBottom: "5rem" }}>
-                    <h3 className="title-lg" style={{ marginBottom: "2rem" }}>갤러리 상세 보기</h3>
+                    <h3 className="title-lg" style={{ marginBottom: "2rem" }}>시공 사례 상세보기</h3>
                     {p.afterSections.map((section, sIdx) => (
                         <div key={sIdx} style={{ marginBottom: "4rem" }}>
                             <div style={{ marginBottom: "2rem", borderLeft: "6px solid var(--primary)", paddingLeft: "1.5rem" }}>
