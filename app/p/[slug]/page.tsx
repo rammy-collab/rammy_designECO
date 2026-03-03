@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!p) return {};
 
     const title = `${p.sizePy ? `${p.sizePy}평 ` : ""}${p.title} | An_DesignECO`;
-    const desc = `현장: ${p.locationGu} · ${p.costDisplay} · ${p.durationDisplay} · ${p.summary}`;
+    const desc = `${p.costDisplay} · ${p.durationDisplay} · ${p.summary}`;
 
     return {
         title,

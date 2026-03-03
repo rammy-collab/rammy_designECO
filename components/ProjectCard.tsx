@@ -18,22 +18,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     unoptimized={true}
                 />
-                <div
-                    style={{
-                        position: "absolute",
-                        top: "1rem",
-                        left: "1rem",
-                        background: "rgba(0,0,0,0.5)",
-                        backdropFilter: "blur(4px)",
-                        color: "white",
-                        padding: "0.25rem 0.75rem",
-                        borderRadius: "20px",
-                        fontSize: "0.75rem",
-                        fontWeight: "600",
-                    }}
-                >
-                    {project.locationGu}
-                </div>
             </div>
             <div style={{ padding: "1.5rem" }}>
                 <div
