@@ -1,0 +1,147 @@
+[
+    {
+        "id": "p_001",
+        "slug": "ivory-32py",
+        "title": "32평 아이보리톤 거실/주방",
+        "summary": "밝은 뉴트럴 톤, 다운라이트 중심",
+        "locationGu": "Songpa-gu",
+        "sizePy": 32,
+        "costDisplay": "상담문의",
+        "durationDisplay": "약 4주 (상담시 확정)",
+        "tags": [
+            "ivory",
+            "neutral",
+            "warm",
+            "lighting"
+        ],
+        "coverImage": {
+            "url": "https://postfiles.pstatic.net/MjAyNjAzMDNfMjgg/MDAxNzcyNTAyODkzMTEx.Gsaz2v_fgLQRQQ8sxGTVXMEkoRPqpaH4Dm95Ud1w-q0g.9cmQrdy0xY3t8YNGrbUNbRCgjLuKKOL67uXMemh-txog.JPEG/a_%EA%B1%B0%EC%8B%A4.jpg?type=w966",
+            "w": 1200,
+            "h": 800,
+            "alt": "시공 후 거실 전경"
+        },
+        "beforeImages": [
+            {
+                "url": "https://postfiles.pstatic.net/MjAyNjAzMDNfMTA1/MDAxNzcyNTAyOTU0NTUw.tuF-huviIlgI4LsMX_Wlb-2X0W-Q_93wARW3gK0T5N4g.w6dLenaOQ9nPYf5zYIyWX33BTYc7ruFpuGvZKlKlPUgg.JPEG/b_%EA%B1%B0%EC%8B%A4.jpg?type=w966",
+                "caption": "시공 전 모습1"
+            },
+            {
+                "url": "https://postfiles.pstatic.net/MjAyNjAzMDNfMTI1/MDAxNzcyNTAyOTU0MTY0.xc-iQmTmSWuLfxxiA1c4WvEnya-L6UD3oo5mFX1qzeMg.fbaqB2fv9iRximYoQVPfxRtmozNTh9WaMEzuVV9AJE4g.JPEG/b_%EA%B1%B0%EC%8B%A42.jpg?type=w966",
+                "caption": "시공 전 모습2"
+            },
+            {
+                "url": "https://postfiles.pstatic.net/MjAyNjAzMDNfNDAg/MDAxNzcyNTAyOTU3NTA1.7ZMxP-EkzGlMoq0zfvQkziz1hJX3cRkO6nVs6yVbn_Ag.ByA0itOiXdJ7-kre_dCa0nM3-ERjZTsKPrQH56-0SBMg.JPEG/b_%ED%98%84%EA%B4%80.jpg?type=w966",
+                "caption": "시공 전 모습"
+            },
+            {
+                "url": "https://postfiles.pstatic.net/MjAyNjAzMDNfMjQ1/MDAxNzcyNTAyOTQ4NzQ2.AzXp9852m-EZQFATvhtWrpqT-hbAAJpwMbOWGzPy2d4g.M_vQuAHHfb9a7uAkmt7V_nXKIX5NavqOq7eqPJdrtY0g.JPEG/b_%EC%A3%BC%EB%B0%A9.jpg?type=w966",
+                "caption": "시공 전 모습4"
+            },
+            {
+                "url": "https://postfiles.pstatic.net/MjAyNjAzMDNfMjEg/MDAxNzcyNTAyOTYwOTc1.udD2fBmf3Tv84WPOy0nzjGSyGWSw8wRNHPfNlQLjvr0g.z2cpXVCCMnSGm2b-YE2xg-aA1BADuxToWHUxwZgkdL4g.JPEG/b_%ED%98%84%EA%B4%80%EC%98%86%EB%B0%A9.jpg?type=w966",
+                "caption": "시공 전 모습5"
+            }
+        ],
+        "afterSections": [
+            {
+                "title": "거실",
+                "description": "밝고 따뜻한 톤의 자재와 다운라이트를 활용하여 아늑한 거실 공간을 완성했습니다.",
+                "images": [
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMjgg/MDAxNzcyNTAyODkzMTEx.Gsaz2v_fgLQRQQ8sxGTVXMEkoRPqpaH4Dm95Ud1w-q0g.9cmQrdy0xY3t8YNGrbUNbRCgjLuKKOL67uXMemh-txog.JPEG/a_%EA%B1%B0%EC%8B%A4.jpg?type=w966",
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMjM0/MDAxNzcyNTAyOTA0ODUz.g3z-kYAlogW4IqA6TR45rET50VtlLne3yoPQsd1H5Kwg.0xdEkWmssqtjxbGXKpEq9XrELg11JJlgHNqYLWZRJC8g.JPEG/a_%EA%B1%B0%EC%8B%A43.jpg?type=w966"
+                ]
+            },
+            {
+                "title": "중문",
+                "description": "세련된 디자인의 중문으로 현관의 개방감과 프라이버시를 동시에 확보했습니다.",
+                "images": [
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMjkz/MDAxNzcyNTAyOTQyMTgy.7z7xqjwUo4kNtv-z9Oqc79kqm4smTDDZX0488dJCZbkg.rEKvM3AFT95s4mv8OL9I7Y3yLIkKffUjEa6O9s6YKPog.JPEG/a_%EC%A4%91%EB%AC%B8.jpg?type=w966"
+                ]
+            },
+            {
+                "title": "복도",
+                "description": "깔끔하게 정리된 복도 라인과 화사한 조명 배치가 돋보이는 공간입니다.",
+                "images": [
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMTEx/MDAxNzcyNTAyOTAzNzEw.5iAz_jKNYueBFsd6snOYy1ui6oUWW7TSSh4Sg8XpopYg.ejzGQCi7Hq0ls6VPGaxzy-OZJoE8TMujalx_za55WPQg.JPEG/a_%EA%B1%B0%EC%8B%A44.jpg?type=w966",
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMjQ3/MDAxNzcyNTAyODkxMDQ5.KTSa5KJ_DK5iiyhH4J9shgt_S_oLGfpPkrRe7BZE68g.s3jmSCR-VUipX_UM-x8YYyJNeWVS_iKPY18GPajaLoAg.JPEG/a_%EA%B1%B0%EC%8B%A42.jpg?type=w966"
+                ]
+            },
+            {
+                "title": "주방",
+                "description": "효율적인 동선과 심플한 가구 배치로 깔끔하고 실용적인 주방을 구현했습니다.",
+                "images": [
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMTc4/MDAxNzcyNTAyOTQ2NjM5.4D64gXVMiSj-pvsqL26gEpbvkC-6LKdGHIro0d8HIP0g.fc_L9t_TO1_jCjwnRr8ppm03fvhHygDWGCnKDwJrjCAg.JPEG/a_%EC%A3%BC%EB%B0%A91.jpg?type=w966",
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMTY1/MDAxNzcyNTAyOTM2MDE4.8XSNHy34HGNAUI76yzUpCcg_x1ygkoD5gtIdb6Boq2Ug._E45-iEQtG5HXQseKKF-RBS0ZbklpxB6SMAaeFUtMEMg.JPEG/a_%EC%A3%BC%EB%B0%A92.jpg?type=w966"
+                ]
+            },
+            {
+                "title": "거실화장실",
+                "description": "차분한 톤의 타일로 청결하고 모던하게 완성한 공용 욕실입니다.",
+                "images": [
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfNjcg/MDAxNzcyNTAyOTA0NTMw.A-hD1Bdq-SdkE6IYQz_a8ecT2l3it86H5bW32UUwiIcg.IxbuLDXbTpc8hs4J8czgwaoGClFwMlz_fTnlyecbUngg.JPEG/a_%EA%B1%B0%EC%8B%A4%ED%99%94%EC%9E%A5%EC%8B%A41.jpg?type=w966",
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMjEw/MDAxNzcyNTAyOTIzMTkw.uaD4UlghuyTnfWU1DRZg_OjBzdOobzHFrA-cAD3pp_Mg.5y3HoZzVKldsrYMIr56GUGWBzWasavgDbjIi3yGbuFMg.JPEG/a_%EA%B1%B0%EC%8B%A4%ED%99%94%EC%9E%A5%EC%8B%A43.jpg?type=w966"
+                ]
+            },
+            {
+                "title": "앞베란다",
+                "description": "깔끔한 타일 마감으로 쾌적해진 앞베란다 공간입니다.",
+                "images": [
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfOSAg/MDAxNzcyNTAyOTM1NDQ2.QB_xkOr6BLZg1grFdOuOUbFUVXAFD2GBqtrRUSCpJhwg.Ope_2EDEpm5b2VonQcsPYVE81EGk67kZpywnX-E-REQg.JPEG/a_%EB%B2%A0%EB%9E%80%EB%8B%A41.jpg?type=w966",
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMjA1/MDAxNzcyNTAyOTE5MzY2.Hb40NvPTBmA5sHAvm68f_-HdvNGQu6OvrEZ3gQB9CuYg.Qdy_eNH7ttFxh4Kgc03_XiVDOPbgxFWg9ijO5dJIz_Mg.JPEG/a_%EB%B2%A0%EB%9E%80%EB%8B%A42.jpg?type=w966",
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMTQ1/MDAxNzcyNTAyOTIxNDA4.hRtna_bZu-jPRTM64sTVUZSoXRK9vj1rFLasJHh2GFYg.57AfAEmIn9s9j1c2MH7_woA8mRFdZ2p1OAmZJO1KvhYg.JPEG/a_%EB%B2%A0%EB%9E%80%EB%8B%A43.jpg?type=w966"
+                ]
+            },
+            {
+                "title": "세탁실",
+                "description": "실용적으로 재단장된 세탁실 공간입니다.",
+                "images": [
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfNzMg/MDAxNzcyNTAyOTI4NzI4.IryQrj4EWNURiHvXs6hw90ZOEfs--6LCyCfAwMP0Vdwg.Qw8dmitTt-BiUGgOKyuWSK9oKi6UPPf8IGJ4rlsa0KEg.JPEG/a_%EC%84%B8%ED%83%81%EC%8B%A4.jpg?type=w966"
+                ]
+            },
+            {
+                "title": "세탁옆방",
+                "description": "깔끔하고 쾌적하게 시공된 세탁실 옆방입니다.",
+                "images": [
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMTgz/MDAxNzcyNTAyOTIzNDAw.o_gnDHm8dXxPB9kNvRvgW3aJD0xZ3FS3riJbDNoGZE4g.e6uZMtgzgMcBsxMKSJ0UWBD7YupjQPhCNIMymShwqIwg.JPEG/a_%EC%84%B8%ED%83%81%EC%8B%A4%EB%B0%A9.jpg?type=w966"
+                ]
+            },
+            {
+                "title": "안방",
+                "description": "휴식에 집중할 수 있도록 차분하게 꾸며진 안방 공간입니다.",
+                "images": [
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMTUz/MDAxNzcyNTAyOTM3NDAw.97ipfFUeqrY_Jn2o0N0L8rHLkD3S1RXE_E9BhcxzjLUg.AIzLvjM0msQGBvStt11K751rY4ZBl8Ia3h5gBLJMtxMg.JPEG/a_%EC%95%88%EB%B0%A9.jpg?type=w966",
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfNTcg/MDAxNzcyNTAyOTMwMDgz.mdZrgz6H20xeunMPBdhrV1u-ncBl1wPusnrfJogyJaog.BYyLbx3m3kfrP9ttS1zf1wtzzhzv2a13zMmg-cBNbiYg.JPEG/a_%EC%95%88%EB%B0%A92.jpg?type=w966"
+                ]
+            },
+            {
+                "title": "안방화장실",
+                "description": "부부만을 위한 아늑하고 깔끔한 분위기의 안방 전용 욕실입니다.",
+                "images": [
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMTcy/MDAxNzcyNTAyOTQ0MzEz.XMbYjjtdp47PeFDZdDkNNOLH5xLiuYu_SGucy3bFzPwg.7IsiUqsKw2T_oFrR43RyY_rN-bqMdPofE8WLyPmJQ6gg.JPEG/a_%EC%95%88%EB%B0%A9%ED%99%94%EC%9E%A5%EC%8B%A4.jpg?type=w966"
+                ]
+            },
+            {
+                "title": "현관방",
+                "description": "화사하고 미니멀한 무드로 시공된 현관 옆방입니다.",
+                "images": [
+                    "https://postfiles.pstatic.net/MjAyNjAzMDNfMTI3/MDAxNzcyNTAyOTU4MDU0.Iy_OBm_qo7MBRBOVGa_tP1mxCEiEZQfqcESkvMoJyhwg.i6swTTnMxJoMPR_qzNL6H0evA22PYR1TKmmRY8JhshAg.JPEG/a_%ED%98%84%EA%B4%80%EC%98%86%EB%B0%A9.jpg?type=w966"
+                ]
+            }
+        ],
+        "spec": [
+            {
+                "label": "타일",
+                "value": "웜그레이 무광 타일 + 연그레이 줄눈"
+            },
+            {
+                "label": "조명",
+                "value": "3000K 다운라이트 / 간접조명(현관, 화장실 2개) / 그 외 구역 간접조명 추가 가능"
+            }
+        ],
+        "contacts": {
+            "phone": "010-0000-0000",
+            "kakao": "",
+            "sms": "010-0000-0000"
+        }
+    }
+]
